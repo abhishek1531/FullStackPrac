@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <p><h2>Registration form. </h2></p>
+    <form action="/submit" method="post">
+        <label for="name">Fullname:</label><br>
+        <input type="text" id="Fullname" name="Fullname" required><br><br>
+    
+         <label for="name">Age:</label><br>
+        <input type="number" id="name" name="age" required><br><br>
+
+        <h2>Country</h2>
+        <select name="Country">
+        <option value="India">India</option>
+        <option value="Canada">Canada</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        </select><br><br><hr>
+
+        <label for="dob">DATE OF BIRTH:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br><br>
+        <input type="radio" id="Female" name="gender" value="Female">
+        <label for="Female">Female</label><br><br>
+
+        <label for="Skills">Skills:</label><br>
+        <input type="checkbox" name="skills" value="HTML">HTML
+        <input type="checkbox" name="skills" value="CSS">CSS
+        <input type="checkbox" name="skills" value="Javascript">Javascript
+        <br>
+        <label for="resume" >Upload Resume:</label><br>
+        <input type="file" id="resume" name="resume" required><br><br>
+
+        <input type="submit" value="Register">
+
+</body>
+</html>
