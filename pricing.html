@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Plans</title>
+  <style>
+    body {
+      font-family: sans-serif; 
+      background-color: #f9fafb;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .pricing-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 22px;
+      color: #374151;
+    }
+
+    .price {
+      margin: 20px 0;
+      font-size: 34px;
+      font-weight: 800;
+      color: #2563eb;
+    }
+
+    .price span {
+      font-size: 16px;
+      font-weight: 400;
+      color: #9ca3af;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px 0;
+      color: #4b5563;
+    }
+
+    ul li {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+    }
+
+    ul li::before {
+      content: "✔";
+      color: #10b981;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+
+    .card button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background-color: #2563eb;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .card button:hover {
+      background-color: #1e40af;
+    }
+
+    .standard {
+      border: 3px solid rgba(14, 165, 233, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="pricing-container">
+  
+    <div class="card">
+      <h3>Basic</h3>
+      <div class="price">$9<span>/mo</span></div>
+      <ul>
+        <li>5 Projects</li>
+        <li>10GB Storage</li>
+        <li>Basic Support</li>
+        <li style="color:#9ca3af;">Advanced Features</li>
+      </ul>
+      <button>Choose Plan</button>
+    </div>
+
+    <div class="card standard">
+      <h3>Standard</h3>
+      <div class="price">$19<span>/mo</span></div>
+      <ul>
+        <li>20 Projects</li>
+        <li>50GB Storage</li>
+        <li>Priority Support</li>
+        <li>Advanced Features</li>
+      </ul>
+      <button>Choose Plan</button>
+    </div>
+
+    
+    <div class="card">
+      <h3>Premium</h3>
+      <div class="price">$29<span>/mo</span></div>
+      <ul>
+        <li>Unlimited Projects</li>
+        <li>200GB Storage</li>
+        <li>24/7 Support</li>
+        <li>All Features</li>
+      </ul>
+      <button>Choose Plan</button>
+    </div>
+  </div>
+</body>
+</html>
